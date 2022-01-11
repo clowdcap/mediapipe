@@ -18,27 +18,27 @@ def otimiza_saque():
         print('Valor indisponivel para saque.')
     else:
         notas_de_100 = valor_do_saque / nota[4]
-        print(f'Nota 100: {notas_de_100}')
+        print(f'Nota 100: {int(notas_de_100)}')
         resto_de_100 = valor_do_saque % nota[4]
 
         if resto_de_100 != 0:
             notas_de_50 = resto_de_100 / nota[3]
-            print(f'Notas 50: {notas_de_50}')
+            print(f'Notas 50: {int(notas_de_50)}')
             resto_de_50 = resto_de_100 % nota[3]
 
             if resto_de_50 != 0:
                 notas_de_10 = resto_de_50 / nota[2]
-                print(f'Notas 10: {notas_de_10}')
+                print(f'Notas 10: {int(notas_de_10)}')
                 resto_de_10 = resto_de_50 % nota[2]
 
                 if resto_de_10 != 0:
                     notas_de_5 = resto_de_10 / nota[1]
-                    print(f'Notas 5: {notas_de_5}')
+                    print(f'Notas 5: {int(notas_de_5)}')
                     resto_de_5 = resto_de_10 % nota[1]
 
                     if resto_de_5 != 0:
                         notas_de_1 = resto_de_5 / nota[0]
-                        print(f'Notas 1: {notas_de_1}')
+                        print(f'Notas 1: {int(notas_de_1)}')
 
 
 otimiza_saque()
