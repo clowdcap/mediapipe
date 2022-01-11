@@ -1,3 +1,8 @@
+.anotations-modules
+anotations-module/
+anotations-module
+/anotations-module/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
