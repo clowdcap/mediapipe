@@ -11,7 +11,7 @@ from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume
 wCam, hCam = 640, 480
 ################################
  
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 cap.set(3, wCam)
 cap.set(4, hCam)
 pTime = 0
@@ -38,7 +38,7 @@ while True:
  
     # Find Hand
     img = detector.findHands(img)
-    lmList, bbox = detector.findPosition(img, draw=True)
+    lmList, bbox = detector.findPosition(img)
     if len(lmList) != 0:
  
         # Filter based on size
